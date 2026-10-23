@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple dashboard demo for organizing business inquiries.">
+  <title>Smart Lead Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <div>
+        <p class="eyebrow">BUSINESS WORKSPACE</p>
+        <h1>Smart Lead Tracker</h1>
+        <p class="subtitle">Manage your business inquiries in one place.</p>
+      </div>
+      <span class="status">Demo version</span>
+    </header>
+
+    <section class="stats" aria-label="Lead statistics">
+      <article class="stat-card">
+        <p>Total leads</p>
+        <h2 id="total-leads">0</h2>
+      </article>
+      <article class="stat-card">
+        <p>Contacted</p>
+        <h2 id="contacted-leads">0</h2>
+      </article>
+      <article class="stat-card">
+        <p>Completed</p>
+        <h2 id="completed-leads">0</h2>
+      </article>
+    </section>
+
+    <section class="panel" aria-labelledby="inquiries-heading">
+      <h2 id="inquiries-heading">Your inquiries</h2>
+      <p id="empty-message">No inquiries yet. Your leads will appear here.</p>
+      <div id="lead-list"></div>
+    </section>
+
+    <footer class="footer">
+      <p>Smart Lead Tracker · Portfolio demo</p>
+    </footer>
+  </main>
+</body>
+</html>
